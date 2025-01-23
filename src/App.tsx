@@ -10,8 +10,8 @@ export const App = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div onClick={toggleTheme} className={`app ${theme}`}>
-      <button>Toggle theme</button>
+    <div className={`app ${theme}`}>
+      <button onClick={toggleTheme}>Toggle theme</button>
       <Link to={'/'}>Главная</Link>
       <Link to={'/about'}>О сайте</Link>
       <Suspense fallback={<div>Loading...</div>}>
